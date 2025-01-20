@@ -998,7 +998,7 @@ Keywords: CONSUMABLE</characteristic>
                 <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">48&quot;</characteristic>
                 <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">Ignore Cover, +1D Injuries</characteristic>
                 <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">FIRE, HEAVY, BLAST 3”</characteristic>
-                <characteristic name="Rules" typeId="6e95-3480-ad33-b345"> Specify a point on the battlefield within 36” (must be in line of sight) that you want to target. Next, take a Ranged Attack ACTION. If the roll fails (i.e. you roll 6 or less), the bomb lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the bombard shot lands 2” away, as 7 – 5 = 2). The direction is decided by your opponent. All models within 3” of the 1 x 1 mm landing spot are hit as the shell explodes – no roll to hit is needed. This weapon has a BLAST radius of 3” – all models within this range are hit. Add +1 DICE to all injury rolls.</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Specify a point on the battlefield within 36” (must be in line of sight) that you want to target. Next, take a Ranged Attack ACTION. If the roll fails (i.e. you roll 6 or less), the bomb lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the bombard shot lands 2” away, as 7 – 5 = 2). The direction is decided by your opponent. All models within 3” of the 1 x 1 mm landing spot are hit as the shell explodes – no roll to hit is needed. This weapon has a BLAST radius of 3” – all models within this range are hit. Add +1 DICE to all injury rolls.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1167,7 +1167,7 @@ Keywords: CONSUMABLE</characteristic>
           <profiles>
             <profile name="Grand Anchorite" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="828c-64ab-63e9-051b">
               <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Anchorite Shrine can always move out of Melee combat with any enemy without the enemy having a chance to attack it. Additionally, it can move out of Melee combat as part of a Standard Move, Charge or Dash. </characteristic>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Anchorite Shrine can always move out of Melee combat with any enemy without the enemy having a chance to attack it. Additionally, it can move out of Melee combat as part of a Standard Move, Charge or Dash.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1738,6 +1738,11 @@ Keywords: CONSUMABLE</characteristic>
             <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The -1D penalty for unarmed is included in the Prisoner statblock.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Mad Dash" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f345-3b64-dcf0-4daf">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Ecclesiastic Prisoner can add +1 DICE to their Dash ACTION</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="afb7-d895-f4b4-73f3" id="fb76-ea55-374a-3ab2" primary="false" name="Pilgrim"/>
@@ -2034,7 +2039,7 @@ Keywords: CONSUMABLE</characteristic>
                 </profile>
                 <profile name="Melee-Focused" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a231-5d63-e5ee-e551">
                   <characteristics>
-                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband may not have any Machine Guns.</characteristic>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband may not have any Machine Guns and only one Punt Gun.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Zealot Strength" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4353-c510-5d4e-63d1">
