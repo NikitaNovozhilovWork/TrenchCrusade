@@ -1017,7 +1017,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Utility Hand" id="8b4c-c5f4-f53b-fe48" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="b6ec-fe59-ac2a-5d00" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="b6ec-fe59-ac2a-5d00" sortIndex="6">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
           </costs>
@@ -1028,7 +1028,7 @@
             <infoLink name="Troop Flag" id="e5af-7b63-3379-2786" hidden="false" type="profile" targetId="e86e-146a-65b7-09f2"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="a26c-4afe-ca98-962c" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="a26c-4afe-ca98-962c" sortIndex="3">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1053,7 +1053,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Carnyx " hidden="true" id="2b13-5e5c-b810-c791" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Carnyx " hidden="true" id="2b13-5e5c-b810-c791" sortIndex="5">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1079,7 +1079,7 @@
             <infoLink name="Fear" id="6e65-5f02-af1f-bbb4" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bagpipes" hidden="true" id="831d-0f3f-be36-9b1d" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Bagpipes" hidden="true" id="831d-0f3f-be36-9b1d" sortIndex="4">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1109,7 +1109,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Shields" id="e16d-0563-0aca-babe" hidden="false" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="0a19-d303-536f-fc4d">
+            <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="0a19-d303-536f-fc4d" sortIndex="1">
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1141,10 +1141,10 @@
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8aa7-b298-20b6-4fd0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2bf-0aa0-4d14-2620" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Heavy Ballistic Shield" id="1861-a174-1d5b-d9f3" hidden="false" type="profile" targetId="adc0-8995-657b-8d4b"/>
+                <infoLink name="Heavy Ballistic Shield" id="c3ce-5a63-7958-9f10" hidden="false" type="profile" targetId="adc0-8995-657b-8d4b"/>
               </infoLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -1221,16 +1221,6 @@
             <infoLink name="Machine Armour" id="512c-0029-f890-db19" hidden="false" type="profile" targetId="2558-23f8-cfa8-40f4"/>
           </infoLinks>
           <modifiers>
-            <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -1433,9 +1423,14 @@
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="self" childId="b287-2326-e785-fe67" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
                   <conditions>
@@ -1567,9 +1562,14 @@
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="self" childId="b287-2326-e785-fe67" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
                   <conditions>
@@ -1910,9 +1910,14 @@
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="self" childId="b287-2326-e785-fe67" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
                   <conditions>
@@ -2357,11 +2362,6 @@
         <infoLink name="Strong" id="bb9b-2957-ce5f-21e9" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
       </infoLinks>
       <modifiers>
-        <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="1" field="80cb-0666-30a3-5540">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2388,19 +2388,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16a8-7110-3d34-ebfe" includeChildSelections="false"/>
               </constraints>
               <modifiers>
-                <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6b8a-68e7-f795-ffe7" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
@@ -2436,9 +2425,14 @@
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="self" childId="b287-2326-e785-fe67" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
                   <conditions>

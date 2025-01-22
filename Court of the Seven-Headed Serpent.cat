@@ -2071,7 +2071,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Charm of Acedia" hidden="true" id="34d0-ca9d-a23f-0d9b" sortIndex="2">
               <profiles>
-                <profile name="Lesser Mark of Cain" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="655a-5c5e-a497-248f">
+                <profile name="Charm of Acedia" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="655a-5c5e-a497-248f">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">This GOETIC (1) spell can be cast right before the model casting it takes an ACTION targeting any model, friend or foe (including the model itself and thus covering Dashing, Climbing, Jumping etc). The target ceases any potential resistance or tension, seeing no point in such effort, making the ACTION succeed automatically with no dice rolled.</characteristic>
                   </characteristics>
@@ -2965,14 +2965,14 @@ The Hunter can do this multiple times during its chosen move, though it has to p
             </modifier>
           </modifiers>
         </profile>
-        <profile name="Aura of Wrath" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="91e6-c60d-e6f1-4932">
+        <profile name="Aura of Famine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="91e6-c60d-e6f1-4932">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All friendly models within 8” of the Saint (including the Saint) roll melee attacks and to Dash with +1 DICE.</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Enemy models within 8” of the Desecrated Saint (unless they have the Keyword BLACK GRAIL or ARTIFICIAL) roll ACTIONS with -1 DICE.</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2fbd-2ebe-b0e5-8708" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f1b5-ce92-42bc-2469" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2997,6 +2997,18 @@ The Hunter can do this multiple times during its chosen move, though it has to p
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="3a57-9286-5c7e-de27" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Aura of Famine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="8375-fafb-016b-d16b">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Enemy models within 8” of the Desecrated Saint (unless they have the Keyword BLACK GRAIL or ARTIFICIAL) roll ACTIONS with -1 DICE.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f1b5-ce92-42bc-2469" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
