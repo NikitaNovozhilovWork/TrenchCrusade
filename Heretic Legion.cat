@@ -1561,8 +1561,8 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bdc-63fb-a0e3-2ff3-max" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8bdc-63fb-a0e3-2ff3-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8bdc-63fb-a0e3-2ff3-max" includeChildSelections="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8bdc-63fb-a0e3-2ff3-min" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
