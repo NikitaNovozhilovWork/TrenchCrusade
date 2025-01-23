@@ -1946,10 +1946,10 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <infoLink name="Semi-Automatic Rifle" id="4211-41f3-a59f-1d1d" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="3b88-7bdf-2370-d7e4" sortIndex="13">
+        <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="3b88-7bdf-2370-d7e4" sortIndex="14">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="3"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d679-6e95-5438-300a" includeChildSelections="true"/>
@@ -2077,9 +2077,10 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="8292-a94f-828f-955e" sortIndex="14">
+        <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="8292-a94f-828f-955e" sortIndex="13">
           <costs>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="3"/>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="Bayonet Lug" hidden="false" id="8bb1-c798-f950-5036" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
