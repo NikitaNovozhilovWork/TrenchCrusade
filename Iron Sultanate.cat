@@ -1710,7 +1710,7 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6144-2684-1405-6571" includeChildSelections="true"/>
           </constraints>
           <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
         </selectionEntry>

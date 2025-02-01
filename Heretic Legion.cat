@@ -428,7 +428,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="2947-3143-19a4-59a0" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2947-3143-19a4-59a0" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2587,7 +2587,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="0" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3844-b41c-9ecc-85b9" shared="true"/>
                   </conditions>
                 </conditionGroup>
