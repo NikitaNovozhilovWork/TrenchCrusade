@@ -1859,7 +1859,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Cumbersome" hidden="false" id="778a-06b1-879b-2382" targetId="f87d-5ea3-e505-6a9f" primary="false"/>
+            <categoryLink targetId="70c9-988d-71a7-7654" id="cad7-1a44-900d-f7c8" primary="false" name="Heavy"/>
           </categoryLinks>
           <profiles>
             <profile name="Coin Hammer" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="4e92-442c-e2fc-4583">
