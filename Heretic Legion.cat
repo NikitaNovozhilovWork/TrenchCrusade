@@ -26,14 +26,26 @@
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3564-70ed-8e9e-6ee8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2a4f-c258-5d70-a3c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="4" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="8267-73be-3903-8067" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true" sortIndex="5"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="3104-500f-a1df-d5c0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="2"/>
-        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="8024-508c-cad2-74e3" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="1"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="3104-500f-a1df-d5c0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="3"/>
+        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="8024-508c-cad2-74e3" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="2"/>
+        <entryLink import="true" name="Advancement" hidden="true" id="6acf-33ac-df3b-e1d6" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="ab5d-1b44-36ce-6e75" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2daf-dded-85a2-f21a"/>
@@ -112,10 +124,22 @@
               <comment>armour adjustments</comment>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="increment" value="1" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3564-70ed-8e9e-6ee8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2a4f-c258-5d70-a3c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Goetic Power" id="313a-7f25-cc7e-920c" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Goetic Power" id="313a-7f25-cc7e-920c" hidden="false" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a62-abe5-e0a5-8b6d-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a62-abe5-e0a5-8b6d-max" includeChildSelections="false"/>
@@ -156,9 +180,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="4286-540c-2fee-9525" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="4" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="4286-540c-2fee-9525" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="5" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="0f51-e51b-67fc-6868" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="80bd-768e-721c-a113" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="3"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="80bd-768e-721c-a113" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="4"/>
         <entryLink import="true" name="Armour" hidden="false" id="7a5b-e868-bc9c-ea71" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -168,6 +192,8 @@
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Advancement" hidden="true" id="19ee-1b7e-6a83-5ba4" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="9202-d14d-0c83-e2cb" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e878-a54e-5461-5f68-min" includeChildSelections="true"/>
@@ -193,7 +219,7 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Tank Palanquin" hidden="true" id="61b5-8cd2-9946-22fd" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Tank Palanquin" hidden="true" id="61b5-8cd2-9946-22fd" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="55"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -273,6 +299,18 @@
               <comment>armour adjustments</comment>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="increment" value="1" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3564-70ed-8e9e-6ee8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2a4f-c258-5d70-a3c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Stealth Generator" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1110-b5e7-9966-1383">
           <characteristics>
@@ -286,7 +324,7 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Commando Weapons" id="2db8-004d-db23-2df1" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Commando Weapons" id="2db8-004d-db23-2df1" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Melee Weapons" hidden="false" id="77b7-8e6e-cf87-a487" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
             <entryLink import="true" name="Utility Hand" hidden="false" id="5e22-7282-592c-3f4d" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90"/>
@@ -344,8 +382,10 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Equipment" hidden="false" id="8178-a6cf-7ddc-d03b" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
-        <entryLink import="true" name="Gas Grenades" hidden="false" id="2c4e-d12c-555f-d0b7" type="selectionEntry" targetId="3e61-384a-10f0-3ade" sortIndex="2"/>
+        <entryLink import="true" name="Gas Grenades" hidden="false" id="2c4e-d12c-555f-d0b7" type="selectionEntry" targetId="3e61-384a-10f0-3ade" sortIndex="3"/>
         <entryLink import="true" name="Armour" hidden="false" id="c743-5acb-1e2d-8c53" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
+        <entryLink import="true" name="Advancement" hidden="true" id="c2ad-257d-a1ec-5864" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="5e84-4087-a63c-e936" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="154a-1d9d-959e-d915" includeChildSelections="true"/>
@@ -409,6 +449,16 @@
                     <condition type="atLeast" value="1" field="selections" scope="self" childId="f468-49af-8d3b-7c7b" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="1a4f-d2cd-c405-6200">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="3564-70ed-8e9e-6ee8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="12e8-ff8c-c933-9eb5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="2a4f-c258-5d70-a3c5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <comment>armour adjustments</comment>
             </modifierGroup>
@@ -435,10 +485,12 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="d698-b0ea-7831-ea45" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="d698-b0ea-7831-ea45" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="4" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="6b85-2b40-edb3-e9a4" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="454e-b570-692d-acf0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="2"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="454e-b570-692d-acf0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="3"/>
         <entryLink import="true" name="Armour" hidden="false" id="9392-df8d-73c0-c5f7" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
+        <entryLink import="true" name="Advancement" hidden="true" id="b539-592d-199e-2cbe" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="2153-c68c-2ae0-686f" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a315-a1b6-dd13-ba1c" includeChildSelections="true"/>
@@ -464,7 +516,7 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Banshee" hidden="true" id="2947-3143-19a4-59a0" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Banshee" hidden="true" id="2947-3143-19a4-59a0" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75ab-16f3-3e6d-d3d8" includeChildSelections="false"/>
           </constraints>
@@ -485,7 +537,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="War Wolf Assault Beast" hidden="false" id="eab4-df0a-d8f3-302d" publicationId="c658-4a10-e1fe-befc" page="23">
+    <selectionEntry type="model" import="true" name="War Wolf Assault Beast" hidden="false" id="eab4-df0a-d8f3-302d" publicationId="c658-4a10-e1fe-befc" page="23">
       <profiles>
         <profile name="War Wolf" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="57ad-9a46-41b3-5414">
           <characteristics>
@@ -495,6 +547,13 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-3</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">50mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2a4f-c258-5d70-a3c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Loping Dash" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3cce-f0d7-ac9e-f3a6">
           <characteristics>
@@ -506,7 +565,7 @@
             <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
             <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Hit, +1D to Injure</characteristic>
-            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">RISKY</characteristic>
             <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Ignores Armor. Takes no hands to wield.</characteristic>
           </characteristics>
         </profile>
@@ -539,6 +598,7 @@
         <categoryLink targetId="914f-0020-0d97-e217" id="d43c-15d8-e34f-cf5b" primary="false" name="Tough"/>
         <categoryLink targetId="4f5c-027d-253c-ffa3" id="c0f6-4160-1d96-486e" primary="false" name="Fear"/>
         <categoryLink targetId="bd43-ddb1-262d-4489" id="7057-3183-59fa-13d3" primary="true" name="Troop"/>
+        <categoryLink targetId="71f8-ee29-0f90-59ec" id="8c99-9816-b0ad-d872" primary="false" name="Limited Potential"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -552,6 +612,10 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Advancement" hidden="true" id="fcc1-b53a-b6f3-bc32" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="7484-ab7d-0652-dfb7" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Artillery Witch" hidden="false" id="f2d9-0f99-61a1-fce5" publicationId="c658-4a10-e1fe-befc" page="24">
       <costs>
@@ -562,12 +626,13 @@
         <categoryLink targetId="7ba1-f516-e8cf-3957" id="c45c-929e-0ae1-7804" primary="false" name="Heretic"/>
         <categoryLink targetId="bd43-ddb1-262d-4489" id="5455-c5d3-a744-436d" primary="true" name="Troop"/>
         <categoryLink targetId="4180-5377-2d83-48ba" id="4aab-3f73-6869-5eab" primary="false" name="Artificial"/>
+        <categoryLink targetId="71f8-ee29-0f90-59ec" id="fd98-de65-38da-9755" primary="false" name="Limited Potential"/>
       </categoryLinks>
       <profiles>
         <profile name="Artillery Witch" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="73fc-5557-f02b-f423">
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+0 Dice</characteristic>
             <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">-1 Dice</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25-32mm</characteristic>
@@ -605,6 +670,18 @@
               <comment>armour adjustments</comment>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="increment" value="1" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3564-70ed-8e9e-6ee8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2a4f-c258-5d70-a3c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Levitate" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="975d-e551-7d4d-1e9b">
           <characteristics>
@@ -656,7 +733,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="7050-8ef1-0699-ced0" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Weapons" id="7050-8ef1-0699-ced0" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Melee Weapons" hidden="false" id="19b2-3fff-cd64-345f" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
             <entryLink import="true" name="Utility Hand" hidden="false" id="2a07-235b-ec1f-ab51" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90">
@@ -670,7 +747,9 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
       <entryLinks>
         <entryLink import="true" name="Equipment" hidden="false" id="347a-bdcf-fe18-3744" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
         <entryLink import="true" name="Armour" hidden="false" id="0ed8-7eee-2ab4-05fb" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
-        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="c8c6-a4c5-b20a-84be" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="1"/>
+        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="c8c6-a4c5-b20a-84be" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="2"/>
+        <entryLink import="true" name="Advancement" hidden="true" id="d882-8dc1-efe9-75ed" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="c26e-fa0c-fc47-e885" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ceb2-bf00-2a24-aa1d" includeChildSelections="true"/>
@@ -841,6 +920,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="6261-b217-6eba-7048" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="1"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="71bf-0c2b-8f27-640e" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="3844-b41c-9ecc-85b9" publicationId="c658-4a10-e1fe-befc" page="22">
@@ -856,8 +936,8 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         <profile name="Heretic Trooper" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="9654-b8d7-9c76-f5db">
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
-            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+0 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+0 Dice</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
@@ -886,6 +966,16 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3564-70ed-8e9e-6ee8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2a4f-c258-5d70-a3c5" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <modifierGroups>
@@ -929,7 +1019,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="5" collapsible="true">
+        <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="4" collapsible="true">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -938,7 +1028,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="7" collapsible="true">
+        <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="6" collapsible="true">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -947,7 +1037,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="4">
+        <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="3">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -956,7 +1046,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Armour" hidden="false" id="1eeb-ff0b-2b86-7667" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a" sortIndex="6">
+        <entryLink import="true" name="Armour" hidden="false" id="1eeb-ff0b-2b86-7667" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a" sortIndex="5">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -965,6 +1055,8 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Advancement" hidden="true" id="37bc-5a06-f6e1-879a" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="1ff3-ee38-85b7-a0e9" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="Legionnaire" field="name">
@@ -984,7 +1076,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="c5b8-a737-3f24-eb36" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Upgrades" id="c5b8-a737-3f24-eb36" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="2353-8642-8dde-809d" type="selectionEntry" targetId="7b92-190b-f8c3-531a"/>
           </entryLinks>
@@ -1019,7 +1111,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
                       <profiles>
                         <profile name="Ranged Legionnaires" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="edc3-f4c5-69c1-d15e">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Legionnaires of this Warband have +1 to their Ranged characteristic</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Legionnaire has +1 to their Ranged characteristic</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -1031,7 +1123,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
                       <profiles>
                         <profile name="Melee Legionnaires" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="82cc-dadb-7eca-e047">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Legionnaires of this Warband have +1 to their Melee characteristic</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Legionnaire has +1 to their Melee characteristic</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -1603,6 +1695,63 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Homunculus" hidden="true" id="c15a-a6ea-9113-9335">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f73c-0f08-e6c3-e9fd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mind-Linked Ally" id="2cf6-2156-d23f-69e0" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="8501-9698-e3e4-1918" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Coordinated Engagement" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e92f-e4a0-3005-dfe0">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models that are part of the same FIRETEAM can be activated at the same time without the opponent getting their turn in between and can take their ACTIONS in any order they wish, switching between the two models. Note that if the Activation of either member of the FIRETEAM forcefully ends (due to a failed RISKY ACTION for example), it ends both Activations.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d34-6bf4-a211-bbc8" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Fireteam" hidden="false" id="0eca-32c7-dd5f-a4ff" targetId="83c8-b351-cb96-119e" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Artillery Witch" hidden="false" id="2a1f-c21b-53b8-e5bb" type="selectionEntry" targetId="f2d9-0f99-61a1-fce5"/>
+            <entryLink import="true" name="Chorister" hidden="false" id="3ce0-8205-c7ee-3930" type="selectionEntry" targetId="fe81-08b2-7161-d4cb"/>
+            <entryLink import="true" name="Communicant Anti-Tank Hunter" hidden="false" id="1dbc-ae79-4824-79db" type="selectionEntry" targetId="f1b3-1797-9928-0a6f"/>
+            <entryLink import="true" name="Goetic Warlock" hidden="false" id="e926-64a8-d449-d6c5" type="selectionEntry" targetId="1281-b425-81b2-7ed9"/>
+            <entryLink import="true" name="Death Commando" hidden="false" id="9e54-711b-0adf-fed9" type="selectionEntry" targetId="77f7-5569-472a-6e92"/>
+            <entryLink import="true" name="Heretic Priest" hidden="false" id="a069-0ff0-ef47-85dd" type="selectionEntry" targetId="8983-6564-96c7-fd33"/>
+            <entryLink import="true" name="Sin Eater" hidden="false" id="ef39-13f1-58d9-2380" type="selectionEntry" targetId="4703-d968-d52d-46b5"/>
+            <entryLink import="true" name="Observer" hidden="false" id="cd0d-3657-2ec8-e549" type="selectionEntry" targetId="886c-6e17-ab87-8c9c"/>
+            <entryLink import="true" name="Heretic Trooper" hidden="false" id="0a32-dee2-70c6-1fc5" type="selectionEntry" targetId="3844-b41c-9ecc-85b9"/>
+            <entryLink import="true" name="War Wolf Assault Beast" hidden="false" id="1e9e-8a40-1c5a-8d15" type="selectionEntry" targetId="eab4-df0a-d8f3-302d"/>
+            <entryLink import="true" name="Trench Dog" hidden="false" id="99f2-be6e-138f-70cc" type="selectionEntry" targetId="52e5-2006-85e1-a7c7"/>
+            <entryLink import="true" name="Wretched" hidden="false" id="1531-9490-aaab-b368" type="selectionEntry" targetId="cf02-7a3e-ffbf-d7f9"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Homunculus" hidden="false" id="8e99-4384-99a4-4686" type="selectionEntry" targetId="e6f9-0f05-aa5b-06cd"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="New Antioch" hidden="false" id="a574-06dc-c09a-b299" targetId="2cfb-73f8-0df3-30e8" primary="false"/>
+        <categoryLink name="Troop" hidden="false" id="ab56-5860-3637-b3ec" targetId="bd43-ddb1-262d-4489" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b9e4-d17d-e5d8-89a9" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Melee Weapons" id="d2cb-f99a-d244-0f6d" hidden="false">
@@ -1610,14 +1759,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
         <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="53eb-43ad-1a94-a4b0" type="selectionEntryGroup" targetId="2316-99d3-0e3a-3771" collective="false" collapsible="true"/>
         <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="8824-d240-893c-36dc" type="selectionEntryGroup" targetId="d2c0-0d50-1405-b805" collapsible="true">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0516-ba5d-c7d6-0bfe" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46a4-3fa9-6dbb-879b" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="decrement" value="1" field="0516-ba5d-c7d6-0bfe">
+            <modifier type="decrement" value="1" field="46a4-3fa9-6dbb-879b">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e22-7282-592c-3f4d" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="6a11-3bd5-d303-dc2b" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -1629,52 +1779,104 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>Strong is overwritten by Cumbersome</comment>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="greaterThan" value="0" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="1" field="selections" scope="parent" childId="8824-d240-893c-36dc" shared="true"/>
+                              </conditions>
+                              <comment>one 2 handed, none can be cumbersome</comment>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="greaterThan" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="2" field="selections" scope="parent" childId="d2c0-0d50-1405-b805" shared="true"/>
+                              </conditions>
+                              <comment>two 2 handed, one can be cumbersome</comment>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
+              <comment>stolen from sultans to account for the homonculus</comment>
             </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5dad-dd09-d075-8b05" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5b33-3827-aee2-220e" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="decrement" value="1" field="5dad-dd09-d075-8b05">
-          <conditionGroups>
-            <conditionGroup type="or">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="1" field="5b33-3827-aee2-220e">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4a0e-6f55-3bac-71b1" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1eda-2b87-9a83-a714" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>shield combo refun</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="5b33-3827-aee2-220e">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="6ffb-5ac2-a05a-8c44" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="5b33-3827-aee2-220e">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8824-d240-893c-36dc" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <comment>Strong is overwritten by Cumbersome</comment>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="8824-d240-893c-36dc" shared="true"/>
+                          </conditions>
+                          <comment>one 2 handed, none can be cumbersome</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="2" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="2" field="selections" scope="parent" childId="8824-d240-893c-36dc" shared="true"/>
+                          </conditions>
+                          <comment>two 2 handed, one can be cumbersome</comment>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="decrement" value="1" field="5dad-dd09-d075-8b05">
-          <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+              <comment>strength refund</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="5b33-3827-aee2-220e">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="8824-d240-893c-36dc" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="5b33-3827-aee2-220e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="6a11-3bd5-d303-dc2b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Melee (One-Handed)" id="2316-99d3-0e3a-3771" hidden="false" collective="false">
       <selectionEntries>
@@ -1719,6 +1921,11 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="c3ba-a27c-b5cb-93e2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e9ef-e201-bd31-38c6" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="increment" value="1" field="c3ba-a27c-b5cb-93e2">
@@ -1799,12 +2006,17 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
           <modifiers>
             <modifier type="increment" value="1" field="ae04-d3d5-cf30-f686">
               <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8802-f3e8-dd87-f06e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="ae04-d3d5-cf30-f686">
+              <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5549-36f8-a639-8fc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="true" id="af47-33c1-b1fc-f2bd" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="true" id="af47-33c1-b1fc-f2bd" sortIndex="6">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
           </costs>
@@ -1822,7 +2034,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Halberd-Gun" hidden="true" id="a6cc-f2e2-5c16-0990" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Halberd-Gun" hidden="true" id="a6cc-f2e2-5c16-0990" sortIndex="5">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1857,9 +2069,14 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="293d-6315-40d8-6b11">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20f6-68af-9eae-0e73" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink targetId="70c9-988d-71a7-7654" id="cad7-1a44-900d-f7c8" primary="false" name="Heavy"/>
+            <categoryLink targetId="70c9-988d-71a7-7654" id="dd06-c57b-194a-77b0" primary="false" name="Heavy"/>
           </categoryLinks>
           <profiles>
             <profile name="Coin Hammer" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="4e92-442c-e2fc-4583">
@@ -1872,10 +2089,13 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="293d-6315-40d8-6b11" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Shield Combo" id="1eda-2b87-9a83-a714" hidden="false" sortIndex="6">
+        <selectionEntryGroup name="Shield Combo" id="1eda-2b87-9a83-a714" hidden="false" sortIndex="8">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Polearm" hidden="false" id="78a5-a1a4-5e3d-251e">
               <costs>
@@ -1893,6 +2113,9 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Executioner&apos;s Axe" hidden="false" id="e97a-75c2-d6f1-aab5" type="selectionEntry" targetId="b3a8-7dea-49be-d447" sortIndex="7"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (One-Handed)" id="53d7-33cb-1563-1112" hidden="false" collective="false">
       <selectionEntries>
@@ -1902,7 +2125,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Pistol" id="e2fe-cd09-4a28-5be3" hidden="false" type="profile" targetId="ae18-4990-fc3c-78ce"/>
+            <infoLink name="Pistol" id="e2fe-cd09-4a28-5be3" hidden="false" type="profile" targetId="ae18-4990-fc3c-78ce">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Silenced Pistol" hidden="true" id="e126-07c8-283d-a9c0" collective="false" sortIndex="2">
@@ -1911,7 +2142,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Silenced Pistol" id="b76b-a7b9-6c65-5f8d" hidden="false" type="profile" targetId="c196-6ca8-b9d1-d407"/>
+            <infoLink name="Silenced Pistol" id="b76b-a7b9-6c65-5f8d" hidden="false" type="profile" targetId="c196-6ca8-b9d1-d407">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Assault" id="d269-18f4-f861-5ff4" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
           </infoLinks>
           <modifiers>
@@ -1928,7 +2167,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Automatic Pistol" id="46c4-537a-b759-e46b" hidden="false" type="profile" targetId="8ac5-3721-e679-7c6e"/>
+            <infoLink name="Automatic Pistol" id="46c4-537a-b759-e46b" hidden="false" type="profile" targetId="8ac5-3721-e679-7c6e">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1947,6 +2194,9 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Tormentor Chain" hidden="false" id="f9dc-3131-e7bf-bd1f" type="selectionEntry" targetId="10ca-4f2b-2f01-6de4"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (Two-Handed)" id="ebc3-4d3d-a2ce-f8ce" hidden="false">
       <selectionEntries>
@@ -1959,7 +2209,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <entryLink import="true" name="Bayonet Lug" hidden="false" id="6c8c-a549-a76a-f85c" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Bolt Action Rifle" id="5c71-7786-a6cd-a3b2" hidden="false" type="profile" targetId="408d-d56e-71c4-f3c4"/>
+            <infoLink name="Bolt Action Rifle" id="5c71-7786-a6cd-a3b2" hidden="false" type="profile" targetId="408d-d56e-71c4-f3c4">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="aa40-8ddf-b94d-fe96" sortIndex="4">
@@ -1971,7 +2229,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <entryLink import="true" name="Bayonet Lug" hidden="false" id="1ce2-3352-2fc8-bf27" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Semi-Automatic Rifle" id="4211-41f3-a59f-1d1d" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a"/>
+            <infoLink name="Semi-Automatic Rifle" id="4211-41f3-a59f-1d1d" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="3b88-7bdf-2370-d7e4" sortIndex="14">
@@ -1983,7 +2249,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d679-6e95-5438-300a" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Anti-Material Rifle" id="4003-e071-9408-d954" hidden="false" type="profile" targetId="50ec-f075-494f-9dc5"/>
+            <infoLink name="Anti-Material Rifle" id="4003-e071-9408-d954" hidden="false" type="profile" targetId="50ec-f075-494f-9dc5">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Critical" id="1eec-0e08-f9cc-8829" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
             <infoLink name="Heavy" id="bf23-b588-52b1-a845" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
@@ -1994,6 +2268,11 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <modifier type="increment" value="1" field="d679-6e95-5438-300a">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="f968-d86e-691c-d8af" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="d679-6e95-5438-300a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ad7e-8af4-357c-b8ef" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2010,7 +2289,11 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <infoLink name="Grenade Launcher" id="0ce4-534b-f0c1-0f35" hidden="false" type="profile" targetId="3113-d133-1726-05a0"/>
             <infoLink name="Blast" id="8927-28ee-d962-296d" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
             <infoLink name="Heavy" id="48de-5525-50ae-8769" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
-            <infoLink name="Shrapnel" id="56cc-870d-b0e0-b091" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232"/>
+            <infoLink name="Shrapnel" id="56cc-870d-b0e0-b091" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="55eb-c4aa-45ab-7db6" primary="false" name="Heavy"/>
@@ -2018,12 +2301,17 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
           <modifiers>
             <modifier type="increment" value="1" field="cd27-b4cb-862c-a11f">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5530-8135-2df1-4b67" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="edfb-8199-6bb5-7556" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="cd27-b4cb-862c-a11f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5530-8135-2df1-4b67" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2044,6 +2332,11 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <categoryLink targetId="70c9-988d-71a7-7654" id="75b8-da92-445e-d47e" primary="false" name="Heavy"/>
           </categoryLinks>
           <modifiers>
+            <modifier type="increment" value="1" field="48bd-a19e-19b2-49bd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c15a-6239-aeb2-3229" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
             <modifier type="increment" value="1" field="48bd-a19e-19b2-49bd">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="7698-8d7d-b9d0-d110" shared="true" includeChildSelections="true"/>
@@ -2072,6 +2365,11 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="11a6-d064-f34d-ab29">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7a2b-8955-0ed6-426c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2103,6 +2401,11 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="ddd8-1f58-fe65-4b30">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4bea-b5e2-2b9d-fcd3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="8292-a94f-828f-955e" sortIndex="13">
@@ -2118,12 +2421,25 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="939e-912c-de97-4fcf" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Automatic Rifle" id="ae10-ab61-5190-8438" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f"/>
+            <infoLink name="Automatic Rifle" id="ae10-ab61-5190-8438" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <modifiers>
             <modifier type="increment" value="1" field="939e-912c-de97-4fcf">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="31ef-14a4-4be6-508f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="939e-912c-de97-4fcf">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b3b1-2e89-19e9-624d" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2148,12 +2464,17 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
           <modifiers>
             <modifier type="increment" value="1" field="b23f-86c6-233b-5452">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5530-8135-2df1-4b67" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="edfb-8199-6bb5-7556" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="b23f-86c6-233b-5452">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5530-8135-2df1-4b67" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2167,7 +2488,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="24ef-14b4-af3f-70fe" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Sniper Rifle" id="aa72-0796-8527-b3c8" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3"/>
+            <infoLink name="Sniper Rifle" id="aa72-0796-8527-b3c8" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Risky" id="9be8-4e74-ce3e-862d" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
             <infoLink name="Critical" id="26de-062a-0236-3445" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
           </infoLinks>
@@ -2203,7 +2532,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="7"/>
           </costs>
           <infoLinks>
-            <infoLink name="Jezzail" id="70f9-3420-c6da-23dd" hidden="false" type="profile" targetId="6d28-673b-5fe7-849e"/>
+            <infoLink name="Jezzail" id="70f9-3420-c6da-23dd" hidden="false" type="profile" targetId="6d28-673b-5fe7-849e">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -2219,7 +2556,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Siege Jezzail" id="88de-1c93-30ed-a7e3" hidden="false" type="profile" targetId="59d6-227d-0859-a162"/>
+            <infoLink name="Siege Jezzail" id="88de-1c93-30ed-a7e3" hidden="false" type="profile" targetId="59d6-227d-0859-a162">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Heavy" id="de1d-a133-9a1a-60fb" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
           <categoryLinks>
@@ -2242,7 +2587,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="c5ad-e5f5-762f-925e" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Sniper Rifle" id="1c59-9ccf-96df-e8b0" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3"/>
+            <infoLink name="Sniper Rifle" id="1c59-9ccf-96df-e8b0" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Critical" id="d1c2-0f47-dd44-6317" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
             <infoLink name="Risky" id="2acf-e223-2bec-c5e6" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
           </infoLinks>
@@ -2345,49 +2698,52 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
         <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="3029-da1c-938d-cff3" type="selectionEntryGroup" targetId="53d7-33cb-1563-1112" collective="false" collapsible="true"/>
         <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="ae63-55f4-b047-9820" type="selectionEntryGroup" targetId="ebc3-4d3d-a2ce-f8ce" collapsible="true">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2eab-1232-6cb7-2579" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d331-308c-e83e-2065" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="decrement" value="1" field="2eab-1232-6cb7-2579">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="4a0e-6f55-3bac-71b1" shared="true"/>
-                        <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="8bf4-3479-1f69-6679" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="decrement" value="1" field="d331-308c-e83e-2065">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="6ffb-5ac2-a05a-8c44" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5628-41a7-304a-d07d" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8f75-90db-76e4-da79" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="decrement" value="1" field="5628-41a7-304a-d07d">
-          <conditionGroups>
-            <conditionGroup type="or">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="decrement" value="1" field="8f75-90db-76e4-da79">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="ae63-55f4-b047-9820" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="6ffb-5ac2-a05a-8c44" shared="true" includeChildSelections="true"/>
               </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="decrement" value="1" field="5628-41a7-304a-d07d">
-          <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+            </modifier>
+            <modifier type="decrement" value="1" field="8f75-90db-76e4-da79">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ebc3-4d3d-a2ce-f8ce" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="8f75-90db-76e4-da79">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4a0e-6f55-3bac-71b1" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8bf4-3479-1f69-6679" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="8f75-90db-76e4-da79">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="6a11-3bd5-d303-dc2b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Grenades" id="daa0-54c9-7e0a-4d14" hidden="false">
       <selectionEntries>
@@ -2414,7 +2770,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Gas Grenades" hidden="false" id="3e61-384a-10f0-3ade">
+        <selectionEntry type="upgrade" import="true" name="Gas Grenades" hidden="false" id="3e61-384a-10f0-3ade" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2430,7 +2786,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08f3-4e24-842c-7741" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="9027-b0bb-72fe-b796">
+        <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="9027-b0bb-72fe-b796" sortIndex="3">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2452,7 +2808,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="true" id="1938-e49a-2a89-e72a">
+        <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="true" id="1938-e49a-2a89-e72a" sortIndex="4">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2485,6 +2841,18 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Rocket-Propelled Grenade" hidden="true" id="9c85-debc-da5e-eda4" type="selectionEntry" targetId="e365-c945-740f-e764" sortIndex="5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="350e-f7fb-708c-4cae" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Demonic Aura Grenade" hidden="false" id="3c73-26ef-2873-2cc2" type="selectionEntry" targetId="b537-34fb-bae6-2cbb" sortIndex="6"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Equipment" id="5adc-fb98-76b8-c105" hidden="false">
       <selectionEntries>
@@ -2570,7 +2938,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51fe-888d-77d2-0e51" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hellbound Brand Contract" hidden="true" id="095e-7a3d-0538-1d4a" sortIndex="10">
+        <selectionEntry type="upgrade" import="true" name="Hellbound Brand Contract" hidden="true" id="095e-7a3d-0538-1d4a" sortIndex="16">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2595,7 +2963,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="b611-946c-0c0f-dbfc" sortIndex="9">
+        <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="b611-946c-0c0f-dbfc" sortIndex="15">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2655,7 +3023,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="true" id="5f28-57da-5cdf-6323" sortIndex="8">
+        <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="true" id="5f28-57da-5cdf-6323" sortIndex="11">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2679,7 +3047,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Martyrdom Pills" hidden="true" id="eb3f-ac83-9f60-6fe1" sortIndex="8">
+        <selectionEntry type="upgrade" import="true" name="Martyrdom Pills" hidden="true" id="eb3f-ac83-9f60-6fe1" sortIndex="10">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
@@ -2705,7 +3073,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="true" id="928a-9b8d-f725-79cf" sortIndex="9">
+        <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="true" id="928a-9b8d-f725-79cf" sortIndex="13">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2736,7 +3104,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Field Shrine" hidden="true" id="b59b-8601-bbe5-e216" sortIndex="9">
+        <selectionEntry type="upgrade" import="true" name="Field Shrine" hidden="true" id="b59b-8601-bbe5-e216" sortIndex="14">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
           </costs>
@@ -2754,7 +3122,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Holy Relic" hidden="true" id="1594-678f-a5d2-5b87" sortIndex="8">
+        <selectionEntry type="upgrade" import="true" name="Holy Relic" hidden="true" id="1594-678f-a5d2-5b87" sortIndex="9">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
@@ -2779,7 +3147,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wind Amulet" hidden="true" id="568b-286b-99cd-574a" sortIndex="8">
+        <selectionEntry type="upgrade" import="true" name="Wind Amulet" hidden="true" id="568b-286b-99cd-574a" sortIndex="12">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
           </costs>
@@ -2821,7 +3189,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Golden Calf Altar" hidden="true" id="c9ba-7a03-eaae-1c00">
+        <selectionEntry type="upgrade" import="true" name="Golden Calf Altar" hidden="true" id="c9ba-7a03-eaae-1c00" sortIndex="17">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2850,6 +3218,22 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trench Shrine" hidden="true" id="de31-881e-fc7e-2bf4">
+          <infoLinks>
+            <infoLink name="Field Shrine" id="bb08-4f20-0dd6-6274" hidden="false" type="profile" targetId="76e2-0e5b-972a-0f69"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae29-4ce7-8861-4020" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afd5-4762-b455-6c98" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="035e-c926-5d74-2483" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Headgear" id="0ff3-f218-8676-1288" hidden="false" sortIndex="1">
@@ -2869,6 +3253,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Sniper Scope" hidden="false" id="42f5-fa6d-819e-2c9d" type="selectionEntry" targetId="4ada-fe73-318e-83f2" sortIndex="18"/>
+        <entryLink import="true" name="The Mark of Cain" hidden="false" id="e7aa-1b0b-c234-c2b9" type="selectionEntry" targetId="446f-35b5-6d7e-5fb2" sortIndex="19"/>
+        <entryLink import="true" name="Knighthood" hidden="false" id="58a8-8222-f959-021c" type="selectionEntry" targetId="639d-bf8f-60b5-1585" sortIndex="20"/>
+        <entryLink import="true" name="Battlefield Title" hidden="false" id="ac73-89fb-59cd-b519" type="selectionEntry" targetId="8beb-299d-e303-63c8" sortIndex="21"/>
+        <entryLink import="true" name="Lock of Samson&apos;s Hair" hidden="false" id="85c7-3489-4852-ee41" type="selectionEntry" targetId="9b61-d0a4-dd30-2d32"/>
+        <entryLink import="true" name="Curative Fluids" hidden="true" id="b95d-0bf9-8d0c-b60b" type="selectionEntry" targetId="0e49-dfa5-4190-ee69"/>
+        <entryLink import="true" name="Saints Reliquary" hidden="true" id="bee3-bf8d-7c29-81f2" type="selectionEntry" targetId="cf19-f306-c26c-1537"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Utility Hand" id="3676-db5e-8076-8b90" hidden="false">
       <selectionEntries>
@@ -2889,25 +3282,15 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="0422-86f1-0b4b-26b9" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="3000-ce3b-f377-3b4c" sortIndex="2">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="29ca-1e9d-0e08-eb8f" includeChildSelections="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e02e-8144-cdd3-e38d" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Musical Instrument" id="67d2-e4f3-33e6-bb1a" hidden="false" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
-          </infoLinks>
-          <modifiers>
-            <modifier type="increment" value="1" field="29ca-1e9d-0e08-eb8f">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0ea6-99b3-e165-9336" shared="true" includeChildSelections="true"/>
-              </conditions>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="e6f9-0f05-aa5b-06cd" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="adcc-26c4-07e5-0372" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -2935,6 +3318,46 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
                     <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="e6f9-0f05-aa5b-06cd" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="adcc-26c4-07e5-0372" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="9d6b-937a-5823-21e8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1e71-efda-21d5-4e59" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Musical Instrument" id="d022-d616-34d0-99b9" hidden="false" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b621-24b3-db53-b09a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="e6f9-0f05-aa5b-06cd" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="model" childId="adcc-26c4-07e5-0372" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -2944,7 +3367,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
       <selectionEntryGroups>
         <selectionEntryGroup name="Shields" id="4a0e-6f55-3bac-71b1" hidden="false" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="631f-4791-138b-a5f1">
+            <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="631f-4791-138b-a5f1" sortIndex="1">
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2956,16 +3379,85 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
                 <infoLink name="Trench Shield" id="34b1-c3b3-99df-adf0" hidden="false" type="profile" targetId="c2a5-72b6-355d-0356"/>
               </infoLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fire Shield" hidden="true" id="c2f1-1e4f-2374-a6a5" sortIndex="2">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6df-f9f5-efd1-2fbc" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="1ad6-b684-8296-5c42" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Fire Shield" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7555-188e-e8fb-6a31">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Always takes one hand to use in both melee and in ranged combat. Grants -1 to all injury rolls against the model. This bonus stacks with any armour the model wears, unless otherwise indicated. Any attack against this model that has the Keyword FIRE will suffer -1 DICE on injury rolls and will not cause an additional BLOOD MARKER.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="374c-9b11-8530-d0af" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37b6-a377-5f71-ef7b" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="61b5-8cd2-9946-22fd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Angelic Instrument" hidden="false" id="f76c-d857-edf1-d524" type="selectionEntry" targetId="a26c-4afe-ca98-962c">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="b621-24b3-db53-b09a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="e6f9-0f05-aa5b-06cd" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="model" childId="adcc-26c4-07e5-0372" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Blasphemous Banner" hidden="true" id="cd60-454b-6eb4-3c54" type="selectionEntry" targetId="ac5b-0ae8-e0cd-5fda">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="e6f9-0f05-aa5b-06cd" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="adcc-26c4-07e5-0372" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Weapons" id="e24e-229d-3831-76f4" hidden="false" collapsible="true">
       <constraints>
-        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="cb66-5e8c-7ed3-53a1" includeChildSelections="false"/>
+        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0d4c-1598-a474-ab6a" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Melee Weapons" hidden="false" id="c565-00c6-2806-e1c5" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="false"/>
@@ -2974,6 +3466,18 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="277a-373f-e66a-7953" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="277a-373f-e66a-7953">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="6ffb-5ac2-a05a-8c44" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="277a-373f-e66a-7953">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="6a11-3bd5-d303-dc2b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -2987,6 +3491,16 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </conditionGroup>
           </conditionGroups>
           <comment>Errors out if 2 or more Heavy on non-</comment>
+        </modifier>
+        <modifier type="increment" value="2" field="0d4c-1598-a474-ab6a">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="6a11-3bd5-d303-dc2b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="2" field="0d4c-1598-a474-ab6a">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="6ffb-5ac2-a05a-8c44" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -3105,8 +3619,8 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aec-93b5-7b58-674f" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6e3c-32f6-4f8d-7f49" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0071-a035-08f3-8565" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3118,6 +3632,11 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="6e3c-32f6-4f8d-7f49">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="94fd-1ae4-a167-310c" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3198,8 +3717,592 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="bf3a-1583-bf9b-c960" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Homunculus" hidden="false" id="e6f9-0f05-aa5b-06cd">
+      <modifiers>
+        <modifier type="add" value="914f-0020-0d97-e217" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="3fb4-b607-7277-c486" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="e637-e915-600f-0ed5" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="4f5c-027d-253c-ffa3" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="b210-a78b-2c43-8366" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Homunculus" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2f34-d5f0-2acc-17eb">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="8&quot;/Flying" field="b725-e0a4-16ae-8df2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="fb6e-4676-0313-a505" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="32mm" field="73ae-cc17-596e-0481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e637-e915-600f-0ed5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="50mm" field="73ae-cc17-596e-0481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3fb4-b607-7277-c486" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="+1 Dice" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3fb4-b607-7277-c486" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="+1 Dice" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="7db6-6b99-81a9-064e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="60mm" field="73ae-cc17-596e-0481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="29e1-35be-2c50-269a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+        <profile name="Artificial Body" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5ffd-c09f-8c37-d626">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Created through the Jabirean alchemy, the Homunculus has no vital organs and they have to be dismembered in order to kill them. All injury rolls against the Homunculus are made with -1 DICE.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Re-creation" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="26cb-315c-d838-d06a">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If the Homunculus is taken Out of Action during battle, and is deemed to have been killed in the post-battle sequence, you do not have to remove it from your roster. Instead, you can spend 40 ducats at any time between battles to bring it back to life with all of its weapons and abilities</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Alchemical Formulae" id="bd6e-95af-4267-9b44" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wings" hidden="false" id="fb6e-4676-0313-a505" sortIndex="1">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Wings" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a846-fca2-5d42-8ed2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Homunculus gains a new movement mode: 8”/Flying</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04d1-bcfc-5a44-a8c9" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Elemental Resistance" hidden="false" id="374e-def4-9fdd-58fa" sortIndex="2">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Elemental Resistance" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="be6c-be10-e7ae-c32d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Attacks made against the Homunculus that have the Keywords FIRE and/or GAS suffer a -1 DICE penalty to injure it. Also, the Homunculus does not suffer additional BLOOD MARKERS from attacks with Keywords FIRE and/or GAS.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8014-d186-17a9-f1be" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Human Hands" hidden="false" id="235c-d4e6-cd18-8574" sortIndex="5">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Human Hands" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="569b-ae5c-dc00-2e64">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Homunculus can buy and wield any weapon allowed in the Iron Sultanate warband or House of Wisdom list, though they cannot select ELITE only items, grenades or items limited to specific units (such as Assassins). They can also carry a Trench Shield or a Fire Shield. This will apply to the Additional Arms formula as well. Cannot be combined with the Wings formula.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24db-b4b0-4545-e6ec" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb6e-4676-0313-a505" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Enslaved Mind" hidden="false" id="8501-9698-e3e4-1918" sortIndex="4">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Enslaved Mind" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b146-999e-652c-37cd">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Homunculus gains the Keyword FIRETEAM along with one model of your choice in the Warband. The other model can only form a Fireteam with this Homunculi, not with any other models.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b1c-1888-61a8-ab4b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Massive Size" hidden="false" id="3fb4-b607-7277-c486" sortIndex="3">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Massive Size" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5742-240c-13ea-02fc">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Homunculus’ size is increased to huge proportions. It now has a base size of 50mm and it gains the Keyword TOUGH. This formula cannot be combined with the Wings formula.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c819-0878-6816-b29d" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb6e-4676-0313-a505" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="914f-0020-0d97-e217" field="category">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="3fb4-b607-7277-c486" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Tough" id="ca1e-ff5f-4c00-912b" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Inhuman Strength" hidden="false" id="e637-e915-600f-0ed5" sortIndex="6">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Inhuman Strength" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="70ac-7d7a-74d2-44f6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The musculature of the Homunculus is reinforced, replaced and strengthened. It now has a base size of 32mm (or 50mm if it also has Massive size). The Homunculus gains +1 DICE to its Melee characteristic and the Keyword STRONG.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cbb-9998-0db8-d357" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Terrifying Appearance" hidden="false" id="b210-a78b-2c43-8366" sortIndex="7">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Terrifying Appearance" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4908-d1d0-1e0b-742a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Whether by captivating beauty or a terrifying appearance, this Homunculus gains the Keyword FEAR.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1812-97bb-92e9-6f25" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Additional Arm" hidden="false" id="6a11-3bd5-d303-dc2b" sortIndex="8">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Additional Arm" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d419-9f55-0708-0571">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Homunculus can perform an additional attack ACTION in Melee or Ranged combat without any penalty. Therefore, if making attacks with three melee weapons, only a single weapon would need to be declared an Off-Hand weapon (suffering the appropriate penalties). It has three hands to carry weapons if combined with Human Hands, and may equip weapons and a shield in any combination, as long as it has hands free to do so. 
+
+
+In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has sufficient weapons and number of hands to carry them), and up to three Melee Attack ACTIONS (if armed with three one-handed weapons); or one Melee Attack ACTION with a two-handed weapon and one Melee Attack ACTION with a one-handed weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa62-abef-3b8c-5aea" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Additional Head" hidden="false" id="c954-2ddb-f552-c976" sortIndex="9">
+              <profiles>
+                <profile name="Additional Head" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4792-d0b3-6bde-483c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Homunculus has two heads and therefore can have two sets of eyes via Alchemical Formula.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b49d-c018-0172-5388" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name=" Startling Speed" hidden="false" id="7f10-21b2-211e-85aa" sortIndex="11">
+              <profiles>
+                <profile name="Startling Speed" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2efe-624c-9d6a-b743">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Homunculus adds +1 DICE to its Dash ACTIONS.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e72e-c9d2-5f43-b90b" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Seal of Solomon" hidden="false" id="adcc-26c4-07e5-0372" sortIndex="12">
+              <profiles>
+                <profile name="Seal of Solomon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="52ca-ad85-c4f7-ba4b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Formula greatly enhances the intelligence of the Homunculus and makes it painfully aware of its artificial existence. It can now buy and use Equipment from the Sultanate Warband Armoury as long as it is not limited to ELITE models. Note that one helmet protects a Homunculus with two heads normally and the Two Heads Formula does not allow the purchase of two different kinds of headgear.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f769-6af6-fba7-760f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gargantuan Size" hidden="true" id="29e1-35be-2c50-269a" sortIndex="13">
+              <profiles>
+                <profile name="Gargantuan Size" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="baa0-2627-70b5-03b8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Can only be bought if the Homunculus already has the Human Hands, Inhuman Strength and Massive Size Formulas. The Homunculus now has a Base Size of 60mm and it can now use one Brazen Bull Only weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f01-dfc4-a351-9193" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="235c-d4e6-cd18-8574" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e637-e915-600f-0ed5" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3fb4-b607-7277-c486" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Regenerative" hidden="false" id="ab92-d72f-4403-7943">
+              <profiles>
+                <profile name="Regenerative" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c7ba-dfeb-57fc-5ba9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Homunculus has an astonishing healing factor and can remove one BLOOD MARKER every time it is Activated, if it has any.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="741b-a8b1-a977-df20" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Eye Options" id="064e-a237-522f-888a" hidden="false" sortIndex="10">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="1145-15a3-7b39-bc56" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1145-15a3-7b39-bc56">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="c954-2ddb-f552-c976" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hypnotic Eyes" hidden="false" id="d76d-a2f2-be44-29e1">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Hypnotic Eyes" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b3d5-d96b-24a2-cef6">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Enemies suffer -1 DICE to hit the Homunculus in Melee. Does not affect Sniper Priests or enemies with the keyword BLACK GRAIL. Cannot be combined with Hawk Eyes without Two Heads.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e522-0f76-09a4-10a5" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hawk Eyes" hidden="false" id="7db6-6b99-81a9-064e">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Hawk Eyes" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6604-5dbd-50cf-6083">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">The eyesight of the Homunculus is based on that of a predatory bird. It can add +1 DICE to its Ranged Attack characteristic. Cannot be combined with Hypnotic Eyes without Two Heads.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6ba-91b0-26e8-ed84" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="60" field="8d43-33fd-332d-17a6" scope="parent" shared="true" id="ba74-80ee-148e-7db8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons" id="69b5-38a8-7a6e-517d" hidden="true" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Ranged Weapons" hidden="false" id="7677-96fb-d1c2-71c8" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" collapsible="false" sortIndex="1"/>
+            <entryLink import="true" name="Utility Hand" hidden="false" id="497c-93f9-b8d1-0ad9" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9c94-5864-3af6-bac1" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="9c94-5864-3af6-bac1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6a11-3bd5-d303-dc2b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="c25b-ecbf-9dde-10dd" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="2d39-8230-a0cb-fd8e" type="selectionEntryGroup" targetId="2316-99d3-0e3a-3771" collective="false" collapsible="true"/>
+                <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="1598-176c-5003-28ea" type="selectionEntryGroup" targetId="d2c0-0d50-1405-b805" collapsible="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1657-51d3-9e64-7104" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="1657-51d3-9e64-7104">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e22-7282-592c-3f4d" shared="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="model" childId="6a11-3bd5-d303-dc2b" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="4a0e-6f55-3bac-71b1" shared="true"/>
+                                <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="1eda-2b87-9a83-a714" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                              </conditions>
+                              <comment>Strong is overwritten by Cumbersome</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="greaterThan" value="0" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="1598-176c-5003-28ea" shared="true"/>
+                                      </conditions>
+                                      <comment>one 2 handed, none can be cumbersome</comment>
+                                    </conditionGroup>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="greaterThan" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                        <condition type="equalTo" value="2" field="selections" scope="parent" childId="d2c0-0d50-1405-b805" shared="true"/>
+                                      </conditions>
+                                      <comment>two 2 handed, one can be cumbersome</comment>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>stolen from sultans to account for the homonculus</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="1657-51d3-9e64-7104">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="6a11-3bd5-d303-dc2b" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f90c-5f1d-a9f2-5841" includeChildSelections="false"/>
+              </constraints>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="f90c-5f1d-a9f2-5841">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="4a0e-6f55-3bac-71b1" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="1eda-2b87-9a83-a714" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>shield combo refun</comment>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="f90c-5f1d-a9f2-5841">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6ffb-5ac2-a05a-8c44" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f90c-5f1d-a9f2-5841">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8824-d240-893c-36dc" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="lessThan" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="8824-d240-893c-36dc" shared="true"/>
+                                  </conditions>
+                                  <comment>one 2 handed, none can be cumbersome</comment>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="lessThan" value="2" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                    <condition type="equalTo" value="2" field="selections" scope="parent" childId="8824-d240-893c-36dc" shared="true"/>
+                                  </conditions>
+                                  <comment>two 2 handed, one can be cumbersome</comment>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>strength refund</comment>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="f90c-5f1d-a9f2-5841">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="8824-d240-893c-36dc" shared="true" roundUp="false"/>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f90c-5f1d-a9f2-5841">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6a11-3bd5-d303-dc2b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="235c-d4e6-cd18-8574" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Troop" hidden="false" id="7239-035f-0072-f743" targetId="bd43-ddb1-262d-4489" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77ab-c63b-a987-b2ff" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c03-6abb-7900-2095" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Grenades" hidden="true" id="5b13-7156-fdba-0df0" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="4">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="235c-d4e6-cd18-8574" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Equipment" hidden="true" id="e5b7-8e96-42c4-cf60" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="adcc-26c4-07e5-0372" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="aae0-91c8-476b-f917" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Mercenaries" id="6469-1d60-9fe0-5c22" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Campaign Rules" id="91ed-0a15-c41d-4398" targetId="ba52-3616-d7f9-8d0c" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
