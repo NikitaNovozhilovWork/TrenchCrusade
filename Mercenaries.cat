@@ -246,7 +246,7 @@
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="fd46-1ce3-976b-5923" primary="true" name="Mercenary"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Goetic Warlock" hidden="true" id="1281-b425-81b2-7ed9">
+    <selectionEntry type="model" import="true" name="Goetic Warlock" hidden="true" id="1281-b425-81b2-7ed9">
       <categoryLinks>
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="d185-1209-2dcf-cfd4" primary="true" name="Mercenary"/>
         <categoryLink targetId="420c-0871-4283-b95b" id="8850-4441-149e-ceb6" primary="false" name="Demonic"/>
@@ -339,7 +339,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sin Eater" hidden="true" id="4703-d968-d52d-46b5">
+    <selectionEntry type="model" import="true" name="Sin Eater" hidden="true" id="4703-d968-d52d-46b5">
       <categoryLinks>
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="8a7b-0fcd-0d41-5471" primary="true" name="Mercenary"/>
         <categoryLink targetId="7ba1-f516-e8cf-3957" id="901a-bdc3-d53e-8666" primary="false" name="Heretic"/>
@@ -475,7 +475,7 @@
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="96a7-1a15-eb5f-467d" primary="true" name="Mercenary"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Trench Dog" hidden="false" id="52e5-2006-85e1-a7c7">
+    <selectionEntry type="model" import="true" name="Trench Dog" hidden="false" id="52e5-2006-85e1-a7c7">
       <categoryLinks>
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="5b27-2007-3a77-372d" primary="true" name="Mercenary"/>
       </categoryLinks>
