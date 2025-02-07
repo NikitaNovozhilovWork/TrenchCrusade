@@ -528,7 +528,7 @@ Keywords: CONSUMABLE</characteristic>
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="e62d-c06e-ce35-428b" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="8cb2-f9e6-e496-1153" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6603-2315-97b5-d845" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -801,7 +801,7 @@ Keywords: CONSUMABLE</characteristic>
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="e62d-c06e-ce35-428b" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="8cb2-f9e6-e496-1153" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6603-2315-97b5-d845" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -831,7 +831,7 @@ Keywords: CONSUMABLE</characteristic>
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="e62d-c06e-ce35-428b" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="8cb2-f9e6-e496-1153" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6603-2315-97b5-d845" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
