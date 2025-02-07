@@ -4563,7 +4563,7 @@ If a Hunter of the Left-hand path wears this Cloak, it cannot wear its Oracle Be
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="model" childId="d8da-8812-463a-5a3a" shared="true" includeChildSelections="true">
-                          <comment> antioch</comment>
+                          <comment>antioch</comment>
                         </condition>
                         <condition type="lessThan" value="1" field="selections" scope="model" childId="fa38-f4fd-c529-2365" shared="true" includeChildSelections="true">
                           <comment>pilgrims</comment>
@@ -4572,13 +4572,13 @@ If a Hunter of the Left-hand path wears this Cloak, it cannot wear its Oracle Be
                           <comment>pilgrims</comment>
                         </condition>
                         <condition type="lessThan" value="1" field="selections" scope="model" childId="8132-2c2e-56dc-14a6" shared="true" includeChildSelections="true">
-                          <comment> antioch</comment>
+                          <comment>antioch</comment>
                         </condition>
                         <condition type="lessThan" value="1" field="selections" scope="model" childId="e8c4-5c09-11b6-1e3f" shared="true" includeChildSelections="true">
-                          <comment> antioch</comment>
+                          <comment>antioch</comment>
                         </condition>
                         <condition type="lessThan" value="1" field="selections" scope="model" childId="a7de-6b4b-be33-277c" shared="true" includeChildSelections="true">
-                          <comment> antioch</comment>
+                          <comment>antioch</comment>
                         </condition>
                       </conditions>
                       <comment>all armour lists</comment>
