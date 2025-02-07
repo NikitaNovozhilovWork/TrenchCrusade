@@ -2195,7 +2195,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Tormentor Chain" hidden="false" id="f9dc-3131-e7bf-bd1f" type="selectionEntry" targetId="10ca-4f2b-2f01-6de4"/>
+        <entryLink import="true" name="Tormentor Chain" hidden="false" id="f9dc-3131-e7bf-bd1f" type="selectionEntry" targetId="10ca-4f2b-2f01-6de4" sortIndex="4"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (Two-Handed)" id="ebc3-4d3d-a2ce-f8ce" hidden="false">
