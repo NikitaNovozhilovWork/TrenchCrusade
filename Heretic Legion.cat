@@ -3739,8 +3739,8 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
         <profile name="Homunculus" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2f34-d5f0-2acc-17eb">
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
-            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+0 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+0 Dice</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
@@ -3762,7 +3762,7 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
             </modifier>
             <modifier type="set" value="+1 Dice" field="12e8-ff8c-c933-9eb5">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="3fb4-b607-7277-c486" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e637-e915-600f-0ed5" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="+1 Dice" field="1a4f-d2cd-c405-6200">
