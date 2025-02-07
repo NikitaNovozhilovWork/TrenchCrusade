@@ -1567,17 +1567,17 @@ Keywords: CONSUMABLE</characteristic>
                 </modifier>
                 <modifier type="set" value="1" field="6ce8-b543-0968-af25">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="8490-56e5-668e-dc90" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="c33c-ba53-b358-8f71" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="increment" value="1" field="6246-2265-63ef-14c4">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="8490-56e5-668e-dc90" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="c33c-ba53-b358-8f71" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
                   </repeats>
                 </modifier>
                 <modifier type="increment" value="1" field="6246-2265-63ef-14c4">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3777-3608-567f-838c" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6465-d66d-e8f0-eaf3" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1642,18 +1642,28 @@ Keywords: CONSUMABLE</characteristic>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="0" field="f3bb-a7e6-d476-f60b"/>
-                    <modifier type="set" value="30" field="8d43-33fd-332d-17a6"/>
+                    <modifier type="set" value="0" field="f3bb-a7e6-d476-f60b">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f541-65c1-3b69-ddb2" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="bb49-2122-7171-aecf" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="30" field="8d43-33fd-332d-17a6">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f541-65c1-3b69-ddb2" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="bb49-2122-7171-aecf" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                   <comment>Change Cost Type</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f541-65c1-3b69-ddb2" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="bb49-2122-7171-aecf" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
