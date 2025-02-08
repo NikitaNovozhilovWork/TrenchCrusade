@@ -540,7 +540,7 @@ Keywords: CONSUMABLE.</characteristic>
     </profile>
     <profile name="Shovel" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d829-4d67-52aa-baaf" publicationId="c658-4a10-e1fe-befc" page="119">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">A model equipped with a shovel always starts the game in cover if deployed on ground level, even if placed in open terrain. As soon as the model moves, it is no longer in over. A model that is covered in this way retains the benefit of Cover even if the attacking model has an unobstructed view of it. If a model equipped with a shovel has two hands free, it can use it in Melee Combat as if it were a Trench Club.</characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">A model equipped with a shovel always starts the game in cover if deployed on ground level, even if placed in open terrain. As soon as the model moves, it is no longer in cover. A model that is covered in this way retains the benefit of Cover even if the attacking model has an unobstructed view of it. If a model equipped with a shovel has two hands free, it can use it in Melee Combat as if it were a Trench Club.</characteristic>
       </characteristics>
     </profile>
     <profile name="Troop Flag" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e86e-146a-65b7-09f2" publicationId="c658-4a10-e1fe-befc" page="119">
@@ -866,7 +866,7 @@ Keyword: CONSUMABLE.</characteristic>
     </profile>
     <profile name="Marid Shovel" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="20a6-1425-0331-7e02">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Marid Shovel has the Keyword HEAVY which allows a Brazen Bull to use it. Otherwise it works exactly like a normal shovel</characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Marid Shovel has the Keyword HEAVY which allows a Brazen Bull to use it. Otherwise, it works exactly like a normal shovel.</characteristic>
       </characteristics>
     </profile>
     <profile name="Gavel of Justice" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="ddce-0973-220d-51e0" page="">
