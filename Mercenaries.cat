@@ -532,26 +532,6 @@
           </modifiers>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Demonic" id="4ddb-9c5f-3db9-33dd" hidden="true" type="rule" targetId="e1d1-9534-0d38-b1e8">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="b990-d914-9dce-66af" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Fear" id="62ed-99d5-0774-1783" hidden="true" type="rule" targetId="8c95-78a1-d88d-5f8e">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="b990-d914-9dce-66af" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>

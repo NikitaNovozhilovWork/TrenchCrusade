@@ -900,7 +900,30 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             <entryLink import="true" name="Mountaineer Kit" hidden="false" id="7d23-8690-3892-e5ed" type="selectionEntry" targetId="b611-946c-0c0f-dbfc" sortIndex="5"/>
             <entryLink import="true" name="Infernal Brand Mark" hidden="false" id="7655-b5f4-f36d-41b3" type="selectionEntry" targetId="fbf4-745c-c4b1-be37" sortIndex="3"/>
             <entryLink import="true" name="Shovel" hidden="false" id="36b1-fe2f-bdbe-9f05" type="selectionEntry" targetId="fa1f-59c8-3f39-3ff0" sortIndex="4"/>
+            <entryLink import="true" name="Lock of Samson&apos;s Hair" hidden="false" id="2a79-43bf-1b77-a104" type="selectionEntry" targetId="9b61-d0a4-dd30-2d32" sortIndex="11"/>
+            <entryLink import="true" name="Curative Fluids" hidden="true" id="39b7-1bcf-8601-0494" type="selectionEntry" targetId="0e49-dfa5-4190-ee69" sortIndex="10"/>
+            <entryLink import="true" name="Field Shrine" hidden="false" id="45bb-25a7-6c11-1b18" type="selectionEntry" targetId="b59b-8601-bbe5-e216" sortIndex="8"/>
+            <entryLink import="true" name="Wind Amulet" hidden="false" id="bd53-92ac-edfa-d374" type="selectionEntry" targetId="568b-286b-99cd-574a" sortIndex="7"/>
+            <entryLink import="true" name="Medi-Kit" hidden="false" id="7965-f77e-07c8-2d79" type="selectionEntry" targetId="5f28-57da-5cdf-6323" sortIndex="6"/>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Trench Shrine" hidden="true" id="a6bc-e1a3-0962-04a8" sortIndex="9">
+              <infoLinks>
+                <infoLink name="Field Shrine" id="9271-c5ab-d1aa-5671" hidden="false" type="profile" targetId="76e2-0e5b-972a-0f69"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae29-4ce7-8861-4020" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0077-b11b-ad45-8c00" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="970f-a76b-8662-9593" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -3347,7 +3370,6 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="b621-24b3-db53-b09a" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <conditionGroups>
@@ -3423,7 +3445,6 @@ When detonated, the mine explosion is treated as a BLAST 3” weapon targeting t
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="b621-24b3-db53-b09a" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <conditionGroups>

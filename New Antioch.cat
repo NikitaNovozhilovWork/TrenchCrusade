@@ -1094,9 +1094,6 @@
             <infoLink name="Risky" id="853b-8c54-b77a-10e2" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
             <infoLink name="Critical" id="3de2-b3fa-ca0b-13a0" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink name="Heavy" hidden="false" id="430e-e798-0e78-be85" targetId="70c9-988d-71a7-7654" primary="false"/>
-          </categoryLinks>
           <modifiers>
             <modifier type="set" value="1" field="ffd6-8fdd-dd52-485b">
               <conditions>

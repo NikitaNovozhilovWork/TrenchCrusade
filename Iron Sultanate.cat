@@ -3960,7 +3960,7 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
             <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
-            <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x50/60mm</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x60/50mm</characteristic>
           </characteristics>
           <modifierGroups>
             <modifierGroup type="and">
