@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Campaign Rules" hidden="false" id="7346-84e3-dbbb-296d">
       <constraints>
@@ -117,7 +117,7 @@
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Exploration Rewards" id="6de0-2f63-f1b6-1824" hidden="false" sortIndex="1">
+                <selectionEntryGroup name="Exploration Rewards" id="6de0-2f63-f1b6-1824" hidden="false" sortIndex="2">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Trench Shrine: Shrine" hidden="false" id="ae29-4ce7-8861-4020">
                       <profiles>
@@ -362,6 +362,17 @@ The saint guides your troops before each battle. The model with the skull gains 
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Paychest" hidden="false" id="c8b6-386e-fb26-d510" publicationId="2431-cfa0-992d-f4d1" page="12" sortIndex="1">
+                  <profiles>
+                    <profile name="Paychest" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="34e6-87c3-bc7d-ff7b">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Does not work automatically, please adjust it manually when you want to spend or add some ducats</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4379,7 +4390,24 @@ If a Hunter of the Left-hand path wears this Cloak, it cannot wear its Oracle Be
     </selectionEntryGroup>
     <selectionEntryGroup name="Advancement" id="bc33-e591-8f2e-a847" hidden="true" collapsible="true">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Elite Promotion" hidden="false" id="4252-ed12-c088-aa07" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Experience" hidden="true" id="27c2-3b77-d3bb-6ca5" publicationId="2431-cfa0-992d-f4d1" page="8" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7" field="e8fb-2805-9f68-e244">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="71f8-ee29-0f90-59ec" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="18" field="selections" scope="model" shared="true" id="e8fb-2805-9f68-e244"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Elite Promotion" hidden="false" id="4252-ed12-c088-aa07" sortIndex="2">
           <profiles>
             <profile name="Promoted!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="09b1-d7b2-638d-03da">
               <characteristics>
@@ -4514,8 +4542,8 @@ If a Hunter of the Left-hand path wears this Cloak, it cannot wear its Oracle Be
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Injuries" hidden="false" id="5dc0-3402-bf77-2cac" type="selectionEntryGroup" targetId="5bde-8a8f-302c-1431" sortIndex="3"/>
-        <entryLink import="true" name="Skills" hidden="false" id="621c-e24e-7182-f1ba" type="selectionEntryGroup" targetId="e01c-f1e9-f8ca-e6c9" sortIndex="2"/>
+        <entryLink import="true" name="Injuries" hidden="false" id="5dc0-3402-bf77-2cac" type="selectionEntryGroup" targetId="5bde-8a8f-302c-1431" sortIndex="4"/>
+        <entryLink import="true" name="Skills" hidden="false" id="621c-e24e-7182-f1ba" type="selectionEntryGroup" targetId="e01c-f1e9-f8ca-e6c9" sortIndex="3"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Skills" id="e01c-f1e9-f8ca-e6c9" hidden="true">
@@ -4608,4 +4636,19 @@ If a Hunter of the Left-hand path wears this Cloak, it cannot wear its Oracle Be
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <publications>
+    <publication name="Campaign Rules 1.3" id="2431-cfa0-992d-f4d1" hidden="false" publisherUrl="https://static1.squarespace.com/static/637c0a5adafeb04f70309b99/t/672ccfd3bfedb5226e213169/1730990038340/Trench+Crusade+Campaign+Rules+v1.3.pdf" shortName="CR1.3"/>
+  </publications>
+  <categoryEntries>
+    <categoryEntry name="Limited Potential" id="71f8-ee29-0f90-59ec" hidden="true" publicationId="2431-cfa0-992d-f4d1" page="9"/>
+    <categoryEntry name="Cannot be Promoted" id="96be-c45c-7016-173f" hidden="false" publicationId="2431-cfa0-992d-f4d1" page="9"/>
+  </categoryEntries>
+  <sharedRules>
+    <rule name="Limited Potential" id="c7ce-924b-e995-e49e" hidden="false" publicationId="2431-cfa0-992d-f4d1" page="9">
+      <description>Some models have a limited capacity to gain experience and learn new skills. They might be too bestial, have limited intelligence or their potential might be supernaturally restricted. Such units can only gain three Skill Advancements (i.e. 7 Experience Points).</description>
+    </rule>
+    <rule name="Cannot be Promoted" id="4ae3-d62d-32e5-85e4" hidden="false" publicationId="2431-cfa0-992d-f4d1" page="9">
+      <description>Not all of the models in your warband can necessarily be promoted. This could be due to their inherent limitations, being machines, lack of access to training and/or necessary equipment and so on.</description>
+    </rule>
+  </sharedRules>
 </catalogue>

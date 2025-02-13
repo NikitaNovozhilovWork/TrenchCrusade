@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="16" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -22,7 +22,6 @@
     <categoryEntry name="The Court" id="50ae-a540-4d66-0d43" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13"/>
     <categoryEntry name="Bull" id="0934-cc68-ca08-7e2b" hidden="false"/>
     <categoryEntry name="Mercenary" id="3dfb-701d-e89c-eba2" hidden="false"/>
-    <categoryEntry name="Limited Potential" id="71f8-ee29-0f90-59ec" hidden="true"/>
   </categoryEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>
@@ -113,7 +112,7 @@ INFECTION MARKERS can be used to modify dice rolls exactly like BLOOD MARKERS. U
     </rule>
   </sharedRules>
   <publications>
-    <publication name="Playtest Rules 1.5" id="c658-4a10-e1fe-befc" hidden="false" shortName="PT1.5" publisherUrl="https://static1.squarespace.com/static/637c0a5adafeb04f70309b99/t/6738d89f383e092b140a808f/1731778725409/Trench+Crusade+Rules+v1.5+%283%29.pdf"/>
+    <publication name="Playtest Rules 1.6" id="c658-4a10-e1fe-befc" hidden="false" shortName="PT1.6" publisherUrl="https://static1.squarespace.com/static/637c0a5adafeb04f70309b99/t/6789757d61af002ec3b032a4/1737061769065/Trench+Crusade+Rules+v1.6+%281%29.pdf"/>
   </publications>
   <sharedProfiles>
     <profile name="Automatic Rifle" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="c35c-a506-683d-6c3f" publicationId="c658-4a10-e1fe-befc" page="109">

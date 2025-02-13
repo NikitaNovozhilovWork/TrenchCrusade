@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry type="model" import="true" name="Combat Medic" hidden="true" id="39c2-abb6-fef0-f96e">
+    <selectionEntry type="model" import="true" name="Combat Medic" hidden="true" id="39c2-abb6-fef0-f96e" publicationId="a9cc-0f96-931a-d1ea" page="2">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
@@ -47,7 +47,7 @@
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="2bdf-406e-8b47-376c" primary="true" name="Mercenary"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Observer" hidden="true" id="886c-6e17-ab87-8c9c">
+    <selectionEntry type="model" import="true" name="Observer" hidden="true" id="886c-6e17-ab87-8c9c" publicationId="a9cc-0f96-931a-d1ea" page="14">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -112,7 +112,7 @@
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="f810-10b9-fe14-072a" primary="true" name="Mercenary"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Communicant Anti-Tank Hunter" hidden="true" id="f1b3-1797-9928-0a6f">
+    <selectionEntry type="model" import="true" name="Communicant Anti-Tank Hunter" hidden="true" id="f1b3-1797-9928-0a6f" publicationId="a9cc-0f96-931a-d1ea" page="6">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -191,7 +191,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Witchburner" hidden="true" id="fb45-9c9c-7cf1-6745">
+    <selectionEntry type="model" import="true" name="Witchburner" hidden="true" id="fb45-9c9c-7cf1-6745" publicationId="a9cc-0f96-931a-d1ea" page="4">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -246,7 +246,7 @@
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="fd46-1ce3-976b-5923" primary="true" name="Mercenary"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Goetic Warlock" hidden="true" id="1281-b425-81b2-7ed9">
+    <selectionEntry type="model" import="true" name="Goetic Warlock" hidden="true" id="1281-b425-81b2-7ed9" publicationId="a9cc-0f96-931a-d1ea" page="12">
       <categoryLinks>
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="d185-1209-2dcf-cfd4" primary="true" name="Mercenary"/>
         <categoryLink targetId="420c-0871-4283-b95b" id="8850-4441-149e-ceb6" primary="false" name="Demonic"/>
@@ -339,7 +339,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Sin Eater" hidden="true" id="4703-d968-d52d-46b5">
+    <selectionEntry type="model" import="true" name="Sin Eater" hidden="true" id="4703-d968-d52d-46b5" publicationId="a9cc-0f96-931a-d1ea" page="10">
       <categoryLinks>
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="8a7b-0fcd-0d41-5471" primary="true" name="Mercenary"/>
         <categoryLink targetId="7ba1-f516-e8cf-3957" id="901a-bdc3-d53e-8666" primary="false" name="Heretic"/>
@@ -424,7 +424,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Mendelist Ammo Monk " hidden="true" id="0923-5700-c9f0-2ef6">
+    <selectionEntry type="model" import="true" name="Mendelist Ammo Monk " hidden="true" id="0923-5700-c9f0-2ef6" publicationId="a9cc-0f96-931a-d1ea" page="8">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -800,4 +800,7 @@
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
+  <publications>
+    <publication name="Mercenary Rules" id="a9cc-0f96-931a-d1ea" hidden="false" shortName="MR142.1" publisherUrl="https://static1.squarespace.com/static/637c0a5adafeb04f70309b99/t/66fab4907cab3418c143682a/1727706259038/Mercenaries-Rules-v1.4.2+%281%29.pdf"/>
+  </publications>
 </catalogue>
