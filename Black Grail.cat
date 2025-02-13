@@ -1915,7 +1915,7 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="set" value="5" field="8d43-33fd-332d-17a6">
+                <modifier type="set" value="10" field="8d43-33fd-332d-17a6">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -2506,6 +2506,19 @@ Corpse Guard can remove one of their own BLOOD or INFECTION MARKERS</characteris
                 <profile name="Dirge of the Great Hegemon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ae4d-6c6a-1159-e1b2">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Grail Thralls and Fly Thralls of the warband are called the Bereaved. Grail Thralls (but not Fly Thralls) can use ranged weapons, standards and musical instruments from the Black Grail Armoury. They have a Ranged characteristic of +0 DICE and cost 35 ducats each.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Hegemon&apos;s Will" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="93cb-bfcb-e75d-a470">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Using the remnants of the lingering power of a fallen Hegemon, any Plague Knight in the warband can command any Thrall within 18” of it directly. During its Activation, a Plague Knight can remove an INFECTION MARKER from any model in play to enable a Thrall within 18” to use any one of the Actions detailed below. Each Thrall can only be affected by Hegemon’s Will once per Turn, but one Plague Knight may issue commands to multiple Thralls (though not multiple times to the same Thrall) during a single Activation, if all the conditions are met.
+- Move: The Thrall makes the standard Move
+Action.
+- Ranged Attack: The Thrall performs a Ranged
+Attack ACTION with any Ranged weapon it has.
+- Charge: The Thrall makes a standard Charge
+Action.
+- Melee Attack: The Thrall performs a Melee
+Attack ACTION.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
